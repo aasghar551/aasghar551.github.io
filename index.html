@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syed Ahmed Asghar | Full Stack Developer</title>
+<meta name="description" content="Syed Ahmed Asghar, full stack developer with 10+ years of experience building websites, web apps, payment integrations, and AI automations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F6; --surface:#FFFFFF; --ink:#16213A; --muted:#5A6478; --line:#D5DBE6;
+  --accent:#2A44F0; --accent-ink:#FFFFFF; --cell0:#DDE3EE; --cell1:#AEBBF7; --cell2:#6F83F5; --cell3:#2A44F0;
+  --head:"Bricolage Grotesque",Georgia,sans-serif; --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1524; --surface:#171F33; --ink:#E8ECF6; --muted:#9AA5BD; --line:#2A3550;
+  --accent:#8EA0FF; --accent-ink:#0F1524; --cell0:#1F2942; --cell1:#2E3F7A; --cell2:#5468D6; --cell3:#8EA0FF;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top{flex-wrap:wrap;gap:.5rem 1rem;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+header.top .mark{font:700 1.1rem var(--head);text-decoration:none}
+nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:4rem 0 3.5rem}
+.hero h1{font:800 clamp(2.8rem,9vw,6.5rem)/0.95 var(--head);letter-spacing:-0.035em;margin:0 0 1.5rem}
+.hero p.lead{font-size:1.3rem;max-width:34rem;margin:0 0 2rem;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.6rem;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+.graph{margin-top:3rem;display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;gap:4px;max-width:100%;overflow:hidden}
+.graph i{display:block;width:100%;aspect-ratio:1;border-radius:3px;background:var(--cell0);opacity:0;animation:pop .35s ease forwards}
+.graph i.l1{background:var(--cell1)}.graph i.l2{background:var(--cell2)}.graph i.l3{background:var(--cell3)}
+@keyframes pop{to{opacity:1}}
+.graph-wrap{display:grid;grid-template-columns:repeat(26,1fr);gap:4px}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.8rem,4vw,2.4rem)/1.1 var(--head);letter-spacing:-0.02em;margin:0 0 2rem}
+.project{display:grid;grid-template-columns:1fr 2fr;gap:1.5rem;padding:1.75rem 0;border-bottom:1px solid var(--line)}
+.project:last-child{border-bottom:0}
+.project h3{font:700 1.4rem var(--head);margin:0 0 .4rem}
+.project .tags{color:var(--muted);font-size:.95rem}
+.project p{margin:0 0 .75rem}
+.project a.link{font-weight:600;color:var(--accent)}
+.skills{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
+.skills li{background:var(--surface);border:1px solid var(--line);padding:.45rem .95rem;border-radius:2rem;font-weight:500}
+.about{max-width:40rem}
+.stats{display:flex;flex-wrap:wrap;gap:2.5rem;margin:2.5rem 0 0}
+.stats b{display:block;font:800 2rem var(--head);letter-spacing:-0.02em}
+.stats span{color:var(--muted);font-size:.95rem}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line);color:var(--muted)}
+footer a{color:var(--ink);font-weight:600}
+@media (max-width:640px){
+  .project{grid-template-columns:1fr;gap:.5rem}
+  nav a{margin-left:1rem}
+  .graph-wrap{grid-template-columns:repeat(13,1fr)}
+  .graph i:nth-child(n+92){display:none}
+}
+@media (prefers-reduced-motion:reduce){.graph i{animation:none;opacity:1}.btn:hover{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#">Syed Ahmed Asghar</a>
+    <nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>I turn ideas into software that works.</h1>
+      <p class="lead">Hi, I'm Syed Ahmed Asghar, a full stack developer with 10+ years in PHP, JavaScript, and WordPress. I build websites, web apps, and payment integrations, and I'm now adding AI automations that save businesses time.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://www.fiverr.com/aasghar551">Hire me on Fiverr</a>
+        <a class="btn" href="#work">See my work</a>
+      </div>
+      <div class="stats">
+        <div><b>10+</b><span>years of experience</span></div>
+        <div><b>4.9</b><span>rating on Fiverr</span></div>
+        <div><b>630</b><span>client reviews</span></div>
+      </div>
+      <div class="graph-wrap graph" id="graph" aria-hidden="true"></div>
+    </div>
+
+    <section id="work">
+      <h2>Work</h2>
+      <article class="project">
+        <div><h3>OwoDaily</h3><div class="tags">Full Stack Developer, 3 years<br>WordPress, Core PHP, MySQL, REST APIs</div></div>
+        <div><p>Built and maintained the core features of the platform. Wrote custom APIs and integrated secure payment gateways to manage payments, payouts, and commissions.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>kulaBrands</h3><div class="tags">Full Stack Developer, 4 years<br>WordPress Multisite, CodeIgniter, MySQL, MongoDB</div></div>
+        <div><p>Managed a multi-site eCommerce and crowdfunding platform. Added member points, multi-vendor systems, and the ShippingEasy API, and built REST APIs for the mobile apps.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Stevens Invoice</h3><div class="tags">Lead Developer<br>WordPress, Core PHP, MySQL</div></div>
+        <div><p>Built a custom invoicing module with automated invoice generation, payment tracking, and multi-gateway integration.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Aerious WordPress theme</h3><div class="tags">Theme Developer, 1 year<br>WordPress, Visual Composer, Redux</div></div>
+        <div><p>Created a multipurpose theme with custom post types and taxonomies, plus CSS animations and JavaScript effects. Launched on ThemeForest.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>HealX Nutrition</h3><div class="tags">Magento Developer<br>Magento 2, custom modules</div></div>
+        <div><p>Customized the Magento 2 theme and backend for product management and order processing.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Cheap Signs Hawaii</h3><div class="tags">WordPress Developer<br>WordPress, WooCommerce, Fancy Product Designer</div></div>
+        <div><p>Built a customizable product design feature that lets customers design signs before they buy.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Table&amp;Food</h3><div class="tags">WordPress Developer<br>WordPress, WooCommerce, custom plugins</div></div>
+        <div><p>Built a dining platform with messaging, user profiles, and customized WooCommerce functionality for reservations.</p></div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience and education</h2>
+      <article class="project">
+        <div><h3>Full Stack Developer</h3><div class="tags">Freelancing on Fiverr<br>Jan 2021 to present</div></div>
+        <div><p>Custom web solutions in PHP, WordPress, CodeIgniter, Laravel, and JavaScript. Secure payment gateway integrations and performance work for clients worldwide.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Full Stack Developer and Team Lead</h3><div class="tags">Vizz Web Solutions<br>Feb 2017 to Jan 2021</div></div>
+        <div><p>Led a team building web applications with PHP, CodeIgniter, MySQL, and WordPress. Designed REST APIs for mobile app integration.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Senior Web Developer</h3><div class="tags">Technology Bell Services<br>Aug 2015 to Jan 2017</div></div>
+        <div><p>Developed a multipurpose WordPress theme, handling both frontend and backend work.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>Junior Web Developer</h3><div class="tags">Creative Tech Solutions<br>Jun 2014 to Jul 2015</div></div>
+        <div><p>Supported WordPress theme customization and backend tasks.</p></div>
+      </article>
+      <article class="project">
+        <div><h3>BS Computer Science</h3><div class="tags">COMSATS Institute of Information Technology, Islamabad<br>2010 to 2014</div></div>
+        <div><p>Coursework in web development, web security, database systems, and software project management.</p></div>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <p>I'm a full stack developer based in Islamabad, Pakistan. I build both the frontend and backend of dynamic, high-performance websites and applications, with a focus on scalable, customizable solutions that meet business goals. I specialize in payment gateway integrations, WordPress development, and custom APIs, and I am expanding into AI integrations and automation. I speak English, Urdu, and Hindi.</p>
+        <h3 style="font:700 1.2rem var(--head);margin:2rem 0 1rem">Skills</h3>
+        <ul class="skills"><li>PHP</li><li>JavaScript</li><li>WordPress</li><li>WooCommerce</li><li>Magento 2</li><li>CodeIgniter</li><li>Laravel</li><li>MySQL</li><li>MongoDB</li><li>REST and SOAP</li><li>WebSockets</li><li>OAuth and JWT</li><li>Stripe</li><li>PayPal</li><li>Authorize.Net</li><li>Square</li><li>Git and GitLab</li><li>AWS and DigitalOcean</li><li>Apache and Nginx</li><li>CI/CD</li><li>AI integrations</li><li>Automation</li></ul>
+        <p style="margin-top:1.5rem"><a href="https://www.fiverr.com/aasghar551/do-payment-gateway-integrations" style="font-weight:600;color:var(--accent)">See my payment integration service on Fiverr</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>The fastest way to reach me is on <a href="https://www.fiverr.com/aasghar551">Fiverr</a>, where I usually reply within an hour. You can also email me at <a href="mailto:aasghar551@gmail.com">aasghar551@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/syedahmedasghar/">LinkedIn</a>.</p>
+  </footer>
+</div>
+
+<script>
+// Decorative commit-style grid in the hero (purely visual)
+(function(){
+  var g=document.getElementById('graph'),n=26*7,html='';
+  for(var i=0;i<n;i++){
+    var r=Math.random(),c=r>.88?' class="l3"':r>.7?' class="l2"':r>.45?' class="l1"':'';
+    html+='<i'+c+' style="animation-delay:'+(Math.floor(i/7)*30)+'ms"></i>';
+  }
+  g.innerHTML=html;
+})();
+</script>
+</body>
+</html>
