@@ -29,7 +29,7 @@ header.top .mark{font:700 1.1rem var(--head);text-decoration:none}
 nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
 nav a:hover{color:var(--ink)}
 .hero{padding:4rem 0 3.5rem}
-.hero h1{font:800 clamp(2.8rem,9vw,6.5rem)/0.95 var(--head);letter-spacing:-0.035em;margin:0 0 1.5rem}
+.hero h1{font:800 clamp(2.6rem,7vw,5rem)/1 var(--head);letter-spacing:-0.035em;margin:0 0 1.5rem}
 .hero p.lead{font-size:1.3rem;max-width:34rem;margin:0 0 2rem;color:var(--muted)}
 .btns{display:flex;flex-wrap:wrap;gap:.75rem}
 .btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.6rem;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
@@ -51,6 +51,10 @@ h2{font:700 clamp(1.8rem,4vw,2.4rem)/1.1 var(--head);letter-spacing:-0.02em;marg
 .skills{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
 .skills li{background:var(--surface);border:1px solid var(--line);padding:.45rem .95rem;border-radius:2rem;font-weight:500}
 .about{max-width:40rem}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:3rem}
+.hero-text{flex:1 1 auto;min-width:0}
+.photo{flex:0 0 auto;width:min(20rem,32vw);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:center top;border:6px solid var(--surface);box-shadow:0 0 0 2px var(--line)}
+@media (max-width:760px){.hero-top{flex-direction:column-reverse;align-items:flex-start;gap:1.5rem}.photo{width:9rem}}
 .stats{display:flex;flex-wrap:wrap;gap:2.5rem;margin:2.5rem 0 0}
 .stats b{display:block;font:800 2rem var(--head);letter-spacing:-0.02em}
 .stats span{color:var(--muted);font-size:.95rem}
@@ -74,11 +78,15 @@ footer a{color:var(--ink);font-weight:600}
 
   <main>
     <div class="hero">
+      <div class="hero-top"><div class="hero-text">
       <h1>I turn ideas into software that works.</h1>
       <p class="lead">Hi, I'm Syed Ahmed Asghar, a full stack developer with 10+ years in PHP, JavaScript, and WordPress. I build websites, web apps, and payment integrations, and I'm now adding AI automations that save businesses time.</p>
       <div class="btns">
         <a class="btn primary" href="https://www.fiverr.com/aasghar551">Hire me on Fiverr</a>
         <a class="btn" href="#work">See my work</a>
+      </div>
+      </div>
+      <img class="photo" src="profile.jpg" width="560" height="560" alt="Portrait of Syed Ahmed Asghar">
       </div>
       <div class="stats">
         <div><b>10+</b><span>years of experience</span></div>
